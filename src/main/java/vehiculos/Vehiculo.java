@@ -14,6 +14,24 @@ public class Vehiculo {
 	static int cantidadCamionetas;
 	static int cantidadAutomoviles;
 	
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+		this.placa = placa;
+		this.puertas = puertas;
+		this.velocidadMaxima = velocidadMaxima;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.peso = peso;
+		this.traccion = traccion;
+		this.fabricante = fabricante;
+		Vehiculo.cantidadVehiculos++;
+		if (Fabricante.vehiculosXFabricante.containsKey(fabricante)) {
+			int n = Fabricante.vehiculosXFabricante.get(fabricante);
+			Fabricante.vehiculosXFabricante.replace(fabricante, n+1);
+		} else {
+			Fabricante.vehiculosXFabricante.put(fabricante, 1);
+		}
+	}
+	
 	public String getPlaca() {
 		return placa;
 	}
