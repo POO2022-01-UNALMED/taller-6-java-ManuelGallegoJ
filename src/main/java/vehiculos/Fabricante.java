@@ -12,19 +12,19 @@ public class Fabricante {
 		this.nombre = nombre;
 		this.pais = pais;
 	}
-
+	
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
-
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	
 	public Pais getPais() {
-		return pais;
+		return this.pais;
 	}
-
+	
 	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
@@ -40,5 +40,4 @@ public class Fabricante {
 		}
 		return fabricaMayorVentas;
 	}
-	
 }

@@ -33,77 +33,77 @@ public class Vehiculo {
 	}
 	
 	public String getPlaca() {
-		return placa;
+		return this.placa;
 	}
-
+	
 	public void setPlaca(String placa) {
 		this.placa = placa;
 	}
-
+	
 	public int getPuertas() {
-		return puertas;
+		return this.puertas;
 	}
-
+	
 	public void setPuertas(int puertas) {
 		this.puertas = puertas;
 	}
-
+	
 	public int getVelocidadMaxima() {
-		return velocidadMaxima;
+		return this.velocidadMaxima;
 	}
-
+	
 	public void setVelocidadMaxima(int velocidadMaxima) {
 		this.velocidadMaxima = velocidadMaxima;
 	}
-
+	
 	public String getNombre() {
-		return nombre;
+		return this.nombre;
 	}
-
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-
+	
 	public int getPrecio() {
-		return precio;
+		return this.precio;
 	}
-
+	
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
-
+	
 	public int getPeso() {
-		return peso;
+		return this.peso;
 	}
-
+	
 	public void setPeso(int peso) {
 		this.peso = peso;
 	}
-
+	
 	public String getTraccion() {
-		return traccion;
+		return this.traccion;
 	}
-
+	
 	public void setTraccion(String traccion) {
 		this.traccion = traccion;
 	}
-
+	
 	public Fabricante getFabricante() {
-		return fabricante;
+		return this.fabricante;
 	}
-
+	
 	public void setFabricante(Fabricante fabricante) {
 		this.fabricante = fabricante;
 	}
-
+	
 	public static int getCantidadVehiculos() {
-		return cantidadVehiculos;
+		return Vehiculo.cantidadVehiculos;
 	}
-
-	public static void setCantidadVehiculos(int cantidadVehiculos) {
+	
+	public static int setCantidadVehiculos(int cantidadVehiculos) {
 		return Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
-
+	
 	public static String vehiculosPorTipo() {
 		return "Automoviles: " + Vehiculo.cantidadAutomoviles +
 				"\nCamionetas: " + Vehiculo.cantidadCamionetas +
