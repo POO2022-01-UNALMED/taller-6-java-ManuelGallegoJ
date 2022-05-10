@@ -83,12 +83,12 @@ public class Vehiculo {
 	}
 
 	public static void setCantidadVehiculos(int cantidadVehiculos) {
-		Vehiculo.cantidadVehiculos = cantidadVehiculos;
+		return Vehiculo.cantidadVehiculos = cantidadVehiculos;
 	}
 
 	public static String vehiculosPorTipo() {
-		return "Automoviles: " + cantidadAutomoviles +
-				"\nCamionetas: " + cantidadCamionetas +
-				"\nCamiones: " + cantidadCamiones;
+		return "Automoviles: " + Vehiculo.cantidadAutomoviles +
+				"\nCamionetas: " + Vehiculo.cantidadCamionetas +
+				"\nCamiones: " + Vehiculo.cantidadCamiones;
 	}
 }
